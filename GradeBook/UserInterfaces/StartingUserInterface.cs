@@ -44,14 +44,14 @@ namespace GradeBook.UserInterfaces
 
             if (name == "standard")
             {
-                StandardGradeBook gradeBook = new StandardGradeBook(name);
+                StandardGradeBook gradeBook = new StandardGradeBook(name, bool.Parse(isWeighted));
                 Console.WriteLine("Created gradebook {0}.", name);
                 GradeBookUserInterface.CommandLoop(gradeBook);
             }
 
             else if (name == "ranked")
             {
-                StandardGradeBook gradeBook = new StandardGradeBook(name);
+                StandardGradeBook gradeBook = new StandardGradeBook(name, bool.Parse(isWeighted));
                 Console.WriteLine("Created gradebook {0}.", name);
                 GradeBookUserInterface.CommandLoop(gradeBook);
             }
